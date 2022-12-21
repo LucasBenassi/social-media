@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+main{
+    position: relative;
+    height: 100vh;
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 750px;
+    width: 350px;
+    background-color: aqua;
+
+    background: url(../imagens/s21frente.png) no-repeat;
+    
+}
+
+iframe#tela{
+    position: relative;
+    border-radius: 27px;
+    top: 13px;
+    left: 13px;
+    width: 315px;
+    height: 695px;
+}
+
+section#redes-sociais{
+    padding: 20px 30px 0px 0px;
+    text-align: right;
+}
+
+section#redes-sociais > a > img{
+
+    width: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais > a > img:hover{
+
+    border-radius: 50%;
+    margin-right: 20px;
+    -webkit-transform: scale(1.2);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.558);
+    transition: all .3s;
+}
